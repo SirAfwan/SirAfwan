@@ -48,5 +48,21 @@
             <p>&copy; 2025 Alif Afwan. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position.
+        window.onscroll = function() {
+            stickyHeader();
+        };
+
+        function stickyHeader() {
+            const header = document.querySelector("header");
+            if (window.pageYOffset > header.offsetTop) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 </html>

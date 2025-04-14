@@ -26,6 +26,7 @@ header {
     padding: 50px 0;
     text-align: center;
     border-bottom: 5px solid #e74c3c;
+    transition: background-color 0.3s ease;
 }
 
 header h1 {
@@ -38,6 +39,10 @@ header p {
     font-size: 1.5rem;
     font-weight: 600;
     color: #ecf0f1;
+}
+
+header:hover {
+    background-color: #34495e;
 }
 
 /* About Section */
@@ -63,6 +68,8 @@ header p {
 
 .about:hover {
     background-color: #d5d8dc;
+    transform: scale(1.02);
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 /* Skills Section */
@@ -70,6 +77,7 @@ header p {
     padding: 40px 0;
     text-align: center;
     background-color: #3498db;
+    transition: background-color 0.3s ease;
 }
 
 .skills h2 {
@@ -87,6 +95,7 @@ header p {
     margin: 10px 0;
     color: #fff;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .skills li:hover {
@@ -122,6 +131,7 @@ header p {
 
 .contact a:hover {
     color: #e74c3c;
+    text-decoration: underline;
 }
 
 /* Footer Styles */
@@ -135,6 +145,16 @@ footer {
 
 footer p {
     font-size: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* Responsive Design */

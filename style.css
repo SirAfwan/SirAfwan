@@ -1,0 +1,161 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and container styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    border-bottom: 5px solid #e74c3c;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+header p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ecf0f1;
+}
+
+/* About Section */
+.about {
+    background-color: #ecf0f1;
+    padding: 40px 0;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #34495e;
+}
+
+.about:hover {
+    background-color: #d5d8dc;
+}
+
+/* Skills Section */
+.skills {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #3498db;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.skills ul {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.skills li {
+    margin: 10px 0;
+    color: #fff;
+    font-weight: bold;
+}
+
+.skills li:hover {
+    color: #e74c3c;
+    cursor: pointer;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #ecf0f1;
+    padding: 40px 0;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    color: #34495e;
+}
+
+.contact a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: #e74c3c;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 5px solid #e74c3c;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    .skills h2, .about h2, .contact h2 {
+        font-size: 2rem;
+    }
+
+    .skills li, .contact p {
+        font-size: 1rem;
+    }
+}

@@ -178,6 +178,45 @@ header p {
     background-color: #0051a4;
 }
 
+/* Volunteerism Section */
+.volunteer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.volunteer-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.volunteer-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.volunteer-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.volunteer-card h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.volunteer-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
 /* Contact Section */
 #contact p {
     font-size: 1.2rem;
@@ -202,27 +241,6 @@ footer {
     text-align: center;
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .container {
@@ -242,6 +260,10 @@ footer {
     }
 
     .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .volunteer-grid {
         grid-template-columns: 1fr;
     }
 

@@ -58,7 +58,7 @@ header h1:hover {
     cursor: pointer;
 }
 
-/* Smooth transition for subtitle */
+/* Header subtitle styles */
 header p {
     font-size: 1.5rem;
     font-weight: 600;
@@ -98,21 +98,76 @@ header p:hover {
     }
 }
 
-/* Adding smooth scroll to the page */
+/* Shape Styles */
+.circle-shape {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #e74c3c;
+    position: absolute;
+    top: -50px;
+    right: 10%;
+    z-index: -1;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.rectangle-shape {
+    width: 150px;
+    height: 50px;
+    background-color: #3498db;
+    position: absolute;
+    top: -40px;
+    left: 10%;
+    z-index: -1;
+}
+
+.triangle-shape {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #2c3e50;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+/* Adding animation for shapes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Smooth scroll to the page */
 html {
     scroll-behavior: smooth;
 }
 
-/* Make header sticky on scroll */
-window.onscroll = function() {
-    stickyHeader();
-};
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
 
-function stickyHeader() {
-    const header = document.querySelector("header");
-    if (window.pageYOffset > header.offsetTop) {
-        header.classList.add("sticky");
-    } else {
-        header.classList.remove("sticky");
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    .skills h2, .about h2, .contact h2 {
+        font-size: 2rem;
+    }
+
+    .skills li, .contact p {
+        font-size: 1rem;
     }
 }

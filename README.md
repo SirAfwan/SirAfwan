@@ -1,5 +1,5 @@
 ## Hi there 👋
-3I'm Afwan a Artificial Intelligence student based on Malaysia
+#I'm Afwan a Artificial Intelligence student based on Malaysia
 <!--
 **SirAfwan/SirAfwan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 

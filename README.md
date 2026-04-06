@@ -12,7 +12,7 @@ Only one project that seems outstand that other which is app development called 
 
 More project is underway
 
-##Fun fact about me
+Fun fact about me
 
  - sike
  - 

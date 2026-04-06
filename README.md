@@ -12,6 +12,11 @@ Only one project that seems outstand that other which is app development called 
 
 More project is underway
 
+---
+### **Tools and Tech**
+ - language: python, java, C++, HTML
+ - IDE: pycharm, android studio, vscode, netbeans
+ - Editting software: lightroom, VN, capcut, Davinvi, After Effect, Canva
 --- 
 
 ### **Fun fact about me**
